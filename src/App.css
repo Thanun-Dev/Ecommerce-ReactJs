@@ -1,39 +1,92 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+:root {
+  --color-1E73BE: rgb(30,115,190);
+  --color-E9ECEF: #E9ECEF;
+  --color-febd69: #febd69;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-15{
+  gap: 15px;
+}
+.gap-30{
+  gap: 30px;
+}
+.bg-orange {
+  background-color: var(--color-febd69);
+}
+.text-blue {
+  color: var(--color-1E73BE);
+}
+/* Header */
+.header-top-strip {
+  border-bottom: 1px solid white;
+  background-color: var(--color-1E73BE);
+}
+.header-upper {
+  background-color: white;
+}
+.header-upper .input-group-text {
+  background-color: var(--color-E9ECEF);
+  color: #1E73BE;
+  
+}
+.header-upper.header-upper-links img {
+  width: 35px;
+  height: 35px;
+}
+.header-bottom {
+  background-color: var(--color-1E73BE);
+}
+.header-bottom .menu-links a{
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
+}
+.header-bottom .dropdown button:focus {
+  box-shadow: none;
+}
+.header-bottom .dropdown-menu {
+  background-color: white;
+  width: 100%;
+  transform: translate3d(0px, 57px, 0px) !important;
+}
+.header-bottom .dropdown-item {
+  color: var(--color-1E73BE);
+  padding: 20px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+.header-bottom .dropdown-item:hover {
+  background-color: transparent;
+  color: var(--color-febd69) !important;
+}
+/* End Header */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Footer */
+footer {
+  background-color: var(--color-1E73BE);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+footer:not(:first-child) {
+  border-top: 1px solid white;
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+/* End Footer */
