@@ -34,6 +34,21 @@ a {
 .text-blue {
   color: var(--color-1E73BE);
 }
+.button {
+  background-color: var(--color-1E73BE);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: var(--color-febd69);
+  color: white;
+}
 /* Header */
 .header-top-strip {
   border-bottom: 1px solid white;
@@ -90,3 +105,32 @@ footer:not(:first-child) {
   border-top: 1px solid white;
 }
 /* End Footer */
+
+/* Homepage */
+.main-banner-content {
+  top: 15%;
+  left: 5%;
+}
+.main-banner-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color:#1E73BE;
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.main-banner-content h5 {
+  font-size: 42px;
+  line-height: 54px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+.main-banner-content p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.4;
+  color: #1E73BE;
+}
+/* End Homepage */
